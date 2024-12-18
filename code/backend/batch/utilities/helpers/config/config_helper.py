@@ -53,6 +53,10 @@ class Config:
         self.enable_chat_history = config["enable_chat_history"]
         self.database_type = config.get("database_type", self.env_helper.DATABASE_TYPE)
 
+        self.conversational_flow = config.get(
+            "conversational_flow", self.env_helper.CONVERSATION_FLOW
+        )
+
     def get_available_document_types(self) -> list[str]:
         document_types = {
             "txt",
@@ -262,6 +266,7 @@ class ConfigHelper:
                             if env_helper.DATABASE_TYPE == DatabaseType.POSTGRESQL.value
                             else True
                         ),
+                        CONVERSATION_FLOW=env_helper.CONVERSATION_FLOW,
                         DATABASE_TYPE=env_helper.DATABASE_TYPE,
                     )
                 )
