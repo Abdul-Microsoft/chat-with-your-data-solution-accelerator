@@ -544,7 +544,7 @@ def create_app():
     @app.route("/api/checkauth", methods=["GET"])
     async def check_auth_enforced():
         """Check if the authentiction is enforced."""
-        return jsonify({"is_auth_enforced": env_helper.ENFORCE_AUTH})
+        return jsonify({"is_auth_enforced": True})
 
     app.register_blueprint(bp_chat_history_response, url_prefix="/api")
     return app
