@@ -1,12 +1,16 @@
 {
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-  "languageVersion": "2.0",
+  "languageVersion": "2.1-experimental",
   "contentVersion": "1.0.0.0",
   "metadata": {
+    "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+    "_EXPERIMENTAL_FEATURES_ENABLED": [
+      "Enable wait and retry feature"
+    ],
     "_generator": {
       "name": "bicep",
       "version": "0.39.26.7824",
-      "templateHash": "17963400440273294880"
+      "templateHash": "8658850269167549460"
     }
   },
   "parameters": {
@@ -779,13 +783,17 @@
         },
         "template": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "languageVersion": "2.0",
+          "languageVersion": "2.1-experimental",
           "contentVersion": "1.0.0.0",
           "metadata": {
+            "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+            "_EXPERIMENTAL_FEATURES_ENABLED": [
+              "Enable wait and retry feature"
+            ],
             "_generator": {
               "name": "bicep",
               "version": "0.39.26.7824",
-              "templateHash": "16389998095350100208"
+              "templateHash": "8332826611735957160"
             }
           },
           "definitions": {
@@ -14153,13 +14161,17 @@
         },
         "template": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "languageVersion": "2.0",
+          "languageVersion": "2.1-experimental",
           "contentVersion": "1.0.0.0",
           "metadata": {
+            "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+            "_EXPERIMENTAL_FEATURES_ENABLED": [
+              "Enable wait and retry feature"
+            ],
             "_generator": {
               "name": "bicep",
               "version": "0.39.26.7824",
-              "templateHash": "4195530859454785600"
+              "templateHash": "11770234013522099453"
             },
             "name": "Private DNS Zones",
             "description": "This module deploys a Private DNS zone."
@@ -14388,13 +14400,17 @@
                 },
                 "template": {
                   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-                  "languageVersion": "2.0",
+                  "languageVersion": "2.1-experimental",
                   "contentVersion": "1.0.0.0",
                   "metadata": {
+                    "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+                    "_EXPERIMENTAL_FEATURES_ENABLED": [
+                      "Enable wait and retry feature"
+                    ],
                     "_generator": {
                       "name": "bicep",
                       "version": "0.39.26.7824",
-                      "templateHash": "162991390725016416"
+                      "templateHash": "6910315257336468858"
                     },
                     "name": "Private DNS Zone Virtual Network Link",
                     "description": "This module deploys a Private DNS Zone Virtual Network Link."
@@ -14600,13 +14616,17 @@
         },
         "template": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "languageVersion": "2.0",
+          "languageVersion": "2.1-experimental",
           "contentVersion": "1.0.0.0",
           "metadata": {
+            "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+            "_EXPERIMENTAL_FEATURES_ENABLED": [
+              "Enable wait and retry feature"
+            ],
             "_generator": {
               "name": "bicep",
               "version": "0.39.26.7824",
-              "templateHash": "5952316286725027748"
+              "templateHash": "5787580060424633690"
             },
             "name": "Azure Cosmos DB account",
             "description": "This module deploys an Azure Cosmos DB account. The API used for the account is determined by the child resources that are deployed."
@@ -15940,13 +15960,17 @@
                 },
                 "template": {
                   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-                  "languageVersion": "2.0",
+                  "languageVersion": "2.1-experimental",
                   "contentVersion": "1.0.0.0",
                   "metadata": {
+                    "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+                    "_EXPERIMENTAL_FEATURES_ENABLED": [
+                      "Enable wait and retry feature"
+                    ],
                     "_generator": {
                       "name": "bicep",
                       "version": "0.39.26.7824",
-                      "templateHash": "17961189621407340108"
+                      "templateHash": "1899116980439847771"
                     },
                     "name": "DocumentDB Database Account SQL Databases",
                     "description": "This module deploys a SQL Database in a CosmosDB Account."
@@ -16072,13 +16096,17 @@
                         },
                         "template": {
                           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-                          "languageVersion": "2.0",
+                          "languageVersion": "2.1-experimental",
                           "contentVersion": "1.0.0.0",
                           "metadata": {
+                            "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+                            "_EXPERIMENTAL_FEATURES_ENABLED": [
+                              "Enable wait and retry feature"
+                            ],
                             "_generator": {
                               "name": "bicep",
                               "version": "0.39.26.7824",
-                              "templateHash": "249108184354607538"
+                              "templateHash": "17953896465345351158"
                             },
                             "name": "DocumentDB Database Account SQL Database Containers",
                             "description": "This module deploys a SQL Database Container in a CosmosDB Account."
@@ -16326,13 +16354,17 @@
                 },
                 "template": {
                   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-                  "languageVersion": "2.0",
+                  "languageVersion": "2.1-experimental",
                   "contentVersion": "1.0.0.0",
                   "metadata": {
+                    "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+                    "_EXPERIMENTAL_FEATURES_ENABLED": [
+                      "Enable wait and retry feature"
+                    ],
                     "_generator": {
                       "name": "bicep",
                       "version": "0.39.26.7824",
-                      "templateHash": "6361709294391707996"
+                      "templateHash": "70994096483065153"
                     },
                     "name": "DocumentDB Database Account SQL Role Definitions.",
                     "description": "This module deploys a SQL Role Definision in a CosmosDB Account."
@@ -16463,13 +16495,17 @@
                         },
                         "template": {
                           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-                          "languageVersion": "2.0",
+                          "languageVersion": "2.1-experimental",
                           "contentVersion": "1.0.0.0",
                           "metadata": {
+                            "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+                            "_EXPERIMENTAL_FEATURES_ENABLED": [
+                              "Enable wait and retry feature"
+                            ],
                             "_generator": {
                               "name": "bicep",
                               "version": "0.39.26.7824",
-                              "templateHash": "11308421294472813926"
+                              "templateHash": "7300637350500944694"
                             },
                             "name": "DocumentDB Database Account SQL Role Assignments.",
                             "description": "This module deploys a SQL Role Assignment in a CosmosDB Account."
@@ -20818,13 +20854,17 @@
         },
         "template": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "languageVersion": "2.0",
+          "languageVersion": "2.1-experimental",
           "contentVersion": "1.0.0.0",
           "metadata": {
+            "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+            "_EXPERIMENTAL_FEATURES_ENABLED": [
+              "Enable wait and retry feature"
+            ],
             "_generator": {
               "name": "bicep",
               "version": "0.39.26.7824",
-              "templateHash": "5436255191760096437"
+              "templateHash": "9618459696995949879"
             },
             "name": "Key Vaults",
             "description": "This module deploys a Key Vault."
@@ -21833,13 +21873,17 @@
                 },
                 "template": {
                   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-                  "languageVersion": "2.0",
+                  "languageVersion": "2.1-experimental",
                   "contentVersion": "1.0.0.0",
                   "metadata": {
+                    "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+                    "_EXPERIMENTAL_FEATURES_ENABLED": [
+                      "Enable wait and retry feature"
+                    ],
                     "_generator": {
                       "name": "bicep",
                       "version": "0.39.26.7824",
-                      "templateHash": "13601768680795987047"
+                      "templateHash": "436815926378256241"
                     },
                     "name": "Key Vault Secrets",
                     "description": "This module deploys a Key Vault Secret."
@@ -22986,13 +23030,17 @@
         },
         "template": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "languageVersion": "2.0",
+          "languageVersion": "2.1-experimental",
           "contentVersion": "1.0.0.0",
           "metadata": {
+            "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+            "_EXPERIMENTAL_FEATURES_ENABLED": [
+              "Enable wait and retry feature"
+            ],
             "_generator": {
               "name": "bicep",
               "version": "0.39.26.7824",
-              "templateHash": "8044963307270176525"
+              "templateHash": "11316590842899854573"
             }
           },
           "parameters": {
@@ -23205,13 +23253,17 @@
                 },
                 "template": {
                   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-                  "languageVersion": "2.0",
+                  "languageVersion": "2.1-experimental",
                   "contentVersion": "1.0.0.0",
                   "metadata": {
+                    "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+                    "_EXPERIMENTAL_FEATURES_ENABLED": [
+                      "Enable wait and retry feature"
+                    ],
                     "_generator": {
                       "name": "bicep",
                       "version": "0.39.26.7824",
-                      "templateHash": "14376261070114657221"
+                      "templateHash": "15394282551041475968"
                     },
                     "name": "Cognitive Services",
                     "description": "This module deploys a Cognitive Service."
@@ -25592,13 +25644,17 @@
         },
         "template": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "languageVersion": "2.0",
+          "languageVersion": "2.1-experimental",
           "contentVersion": "1.0.0.0",
           "metadata": {
+            "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+            "_EXPERIMENTAL_FEATURES_ENABLED": [
+              "Enable wait and retry feature"
+            ],
             "_generator": {
               "name": "bicep",
               "version": "0.39.26.7824",
-              "templateHash": "8044963307270176525"
+              "templateHash": "11316590842899854573"
             }
           },
           "parameters": {
@@ -25811,13 +25867,17 @@
                 },
                 "template": {
                   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-                  "languageVersion": "2.0",
+                  "languageVersion": "2.1-experimental",
                   "contentVersion": "1.0.0.0",
                   "metadata": {
+                    "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+                    "_EXPERIMENTAL_FEATURES_ENABLED": [
+                      "Enable wait and retry feature"
+                    ],
                     "_generator": {
                       "name": "bicep",
                       "version": "0.39.26.7824",
-                      "templateHash": "14376261070114657221"
+                      "templateHash": "15394282551041475968"
                     },
                     "name": "Cognitive Services",
                     "description": "This module deploys a Cognitive Service."
@@ -28199,13 +28259,17 @@
         },
         "template": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "languageVersion": "2.0",
+          "languageVersion": "2.1-experimental",
           "contentVersion": "1.0.0.0",
           "metadata": {
+            "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+            "_EXPERIMENTAL_FEATURES_ENABLED": [
+              "Enable wait and retry feature"
+            ],
             "_generator": {
               "name": "bicep",
               "version": "0.39.26.7824",
-              "templateHash": "8044963307270176525"
+              "templateHash": "11316590842899854573"
             }
           },
           "parameters": {
@@ -28418,13 +28482,17 @@
                 },
                 "template": {
                   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-                  "languageVersion": "2.0",
+                  "languageVersion": "2.1-experimental",
                   "contentVersion": "1.0.0.0",
                   "metadata": {
+                    "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+                    "_EXPERIMENTAL_FEATURES_ENABLED": [
+                      "Enable wait and retry feature"
+                    ],
                     "_generator": {
                       "name": "bicep",
                       "version": "0.39.26.7824",
-                      "templateHash": "14376261070114657221"
+                      "templateHash": "15394282551041475968"
                     },
                     "name": "Cognitive Services",
                     "description": "This module deploys a Cognitive Service."
@@ -33741,13 +33809,17 @@
         },
         "template": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "languageVersion": "2.0",
+          "languageVersion": "2.1-experimental",
           "contentVersion": "1.0.0.0",
           "metadata": {
+            "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+            "_EXPERIMENTAL_FEATURES_ENABLED": [
+              "Enable wait and retry feature"
+            ],
             "_generator": {
               "name": "bicep",
               "version": "0.39.26.7824",
-              "templateHash": "5792200250308580841"
+              "templateHash": "7250349983810978087"
             }
           },
           "parameters": {
@@ -33999,13 +34071,17 @@
                 },
                 "template": {
                   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-                  "languageVersion": "2.0",
+                  "languageVersion": "2.1-experimental",
                   "contentVersion": "1.0.0.0",
                   "metadata": {
+                    "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+                    "_EXPERIMENTAL_FEATURES_ENABLED": [
+                      "Enable wait and retry feature"
+                    ],
                     "_generator": {
                       "name": "bicep",
                       "version": "0.39.26.7824",
-                      "templateHash": "1347511588046818300"
+                      "templateHash": "11861626445661574536"
                     }
                   },
                   "definitions": {
@@ -35016,13 +35092,17 @@
                         },
                         "template": {
                           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-                          "languageVersion": "2.0",
+                          "languageVersion": "2.1-experimental",
                           "contentVersion": "1.0.0.0",
                           "metadata": {
+                            "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+                            "_EXPERIMENTAL_FEATURES_ENABLED": [
+                              "Enable wait and retry feature"
+                            ],
                             "_generator": {
                               "name": "bicep",
                               "version": "0.39.26.7824",
-                              "templateHash": "11666262061409473778"
+                              "templateHash": "16351668309100012816"
                             },
                             "name": "Site App Settings",
                             "description": "This module deploys a Site App Setting."
@@ -36051,13 +36131,17 @@
         },
         "template": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "languageVersion": "2.0",
+          "languageVersion": "2.1-experimental",
           "contentVersion": "1.0.0.0",
           "metadata": {
+            "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+            "_EXPERIMENTAL_FEATURES_ENABLED": [
+              "Enable wait and retry feature"
+            ],
             "_generator": {
               "name": "bicep",
               "version": "0.39.26.7824",
-              "templateHash": "16879216494119194959"
+              "templateHash": "17176525889660275673"
             }
           },
           "parameters": {
@@ -36309,13 +36393,17 @@
                 },
                 "template": {
                   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-                  "languageVersion": "2.0",
+                  "languageVersion": "2.1-experimental",
                   "contentVersion": "1.0.0.0",
                   "metadata": {
+                    "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+                    "_EXPERIMENTAL_FEATURES_ENABLED": [
+                      "Enable wait and retry feature"
+                    ],
                     "_generator": {
                       "name": "bicep",
                       "version": "0.39.26.7824",
-                      "templateHash": "1347511588046818300"
+                      "templateHash": "11861626445661574536"
                     }
                   },
                   "definitions": {
@@ -37326,13 +37414,17 @@
                         },
                         "template": {
                           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-                          "languageVersion": "2.0",
+                          "languageVersion": "2.1-experimental",
                           "contentVersion": "1.0.0.0",
                           "metadata": {
+                            "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+                            "_EXPERIMENTAL_FEATURES_ENABLED": [
+                              "Enable wait and retry feature"
+                            ],
                             "_generator": {
                               "name": "bicep",
                               "version": "0.39.26.7824",
-                              "templateHash": "11666262061409473778"
+                              "templateHash": "16351668309100012816"
                             },
                             "name": "Site App Settings",
                             "description": "This module deploys a Site App Setting."
@@ -38368,18 +38460,23 @@
         },
         "template": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "languageVersion": "2.0",
+          "languageVersion": "2.1-experimental",
           "contentVersion": "1.0.0.0",
           "metadata": {
+            "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+            "_EXPERIMENTAL_FEATURES_ENABLED": [
+              "Enable wait and retry feature"
+            ],
             "_generator": {
               "name": "bicep",
               "version": "0.39.26.7824",
-              "templateHash": "10996245640052014127"
+              "templateHash": "16277820563191709272"
             }
           },
           "parameters": {
             "name": {
               "type": "string",
+              "defaultValue": "fntestcwyd36",
               "metadata": {
                 "description": "Required. Name of the function app."
               }
@@ -38400,13 +38497,14 @@
             },
             "serverFarmResourceId": {
               "type": "string",
+              "defaultValue": "/subscriptions/1d5876cd-7603-407a-96d2-ae5ca9a9c5f3/resourceGroups/rg-cwydpocabps13/providers/Microsoft.Web/serverFarms/asp-cwydpocabps13llxlz",
               "metadata": {
                 "description": "Required. The resource ID of the app service plan to use for the function app."
               }
             },
             "storageAccountName": {
               "type": "string",
-              "defaultValue": "",
+              "defaultValue": "stcwydpocabps13llxlz",
               "metadata": {
                 "description": "Optional. The name of the storage account to use for the function app."
               }
@@ -38472,6 +38570,7 @@
             },
             "clientKey": {
               "type": "securestring",
+              "defaultValue": "[format('default-test-key-{0}', uniqueString(resourceGroup().id))]",
               "metadata": {
                 "description": "Optional. The client key to use for the function app."
               }
@@ -38542,9 +38641,36 @@
             "kind": "[if(variables('useDocker'), 'functionapp,linux,container', 'functionapp,linux')]"
           },
           "resources": {
+            "functionAppWait": {
+              "existing": true,
+              "@options": {
+                "waitUntil": [
+                  "[lambda('func', and(and(equals(lambdaVariables('func').properties.state, 'Running'), equals(lambdaVariables('func').properties.availabilityState, 'Normal')), equals(lambdaVariables('func').properties.hostNamesDisabled, false())))]",
+                  "10m"
+                ]
+              },
+              "type": "Microsoft.Web/sites",
+              "apiVersion": "2023-01-01",
+              "name": "[parameters('name')]",
+              "dependsOn": [
+                "function"
+              ]
+            },
             "functionNameDefaultClientKey": {
+              "@options": {
+                "retryOn": [
+                  [
+                    "ResourceNotFound",
+                    "ResourceConflict",
+                    "InternalServerError",
+                    "BadRequest",
+                    "ServiceUnavailable"
+                  ],
+                  5
+                ]
+              },
               "type": "Microsoft.Web/sites/host/functionKeys",
-              "apiVersion": "2018-11-01",
+              "apiVersion": "2024-04-01",
               "name": "[format('{0}/default/clientKey', parameters('name'))]",
               "properties": {
                 "name": "ClientKey",
@@ -38552,23 +38678,7 @@
               },
               "dependsOn": [
                 "function",
-                "waitFunctionDeploymentSection"
-              ]
-            },
-            "waitFunctionDeploymentSection": {
-              "type": "Microsoft.Resources/deploymentScripts",
-              "apiVersion": "2020-10-01",
-              "name": "WaitFunctionDeploymentSection",
-              "kind": "AzurePowerShell",
-              "location": "[parameters('location')]",
-              "properties": {
-                "azPowerShellVersion": "11.0",
-                "scriptContent": "start-sleep -Seconds 300",
-                "cleanupPreference": "Always",
-                "retentionInterval": "PT1H"
-              },
-              "dependsOn": [
-                "function"
+                "functionAppWait"
               ]
             },
             "function": {
@@ -38645,12 +38755,17 @@
                 },
                 "template": {
                   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+                  "languageVersion": "2.1-experimental",
                   "contentVersion": "1.0.0.0",
                   "metadata": {
+                    "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+                    "_EXPERIMENTAL_FEATURES_ENABLED": [
+                      "Enable wait and retry feature"
+                    ],
                     "_generator": {
                       "name": "bicep",
                       "version": "0.39.26.7824",
-                      "templateHash": "17508426375842638682"
+                      "templateHash": "11318377843097022019"
                     }
                   },
                   "parameters": {
@@ -38928,8 +39043,8 @@
                       }
                     ]
                   },
-                  "resources": [
-                    {
+                  "resources": {
+                    "functions": {
                       "type": "Microsoft.Resources/deployments",
                       "apiVersion": "2025-04-01",
                       "name": "[format('{0}-functions', parameters('name'))]",
@@ -39010,13 +39125,17 @@
                         },
                         "template": {
                           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-                          "languageVersion": "2.0",
+                          "languageVersion": "2.1-experimental",
                           "contentVersion": "1.0.0.0",
                           "metadata": {
+                            "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+                            "_EXPERIMENTAL_FEATURES_ENABLED": [
+                              "Enable wait and retry feature"
+                            ],
                             "_generator": {
                               "name": "bicep",
                               "version": "0.39.26.7824",
-                              "templateHash": "1347511588046818300"
+                              "templateHash": "11861626445661574536"
                             }
                           },
                           "definitions": {
@@ -40027,13 +40146,17 @@
                                 },
                                 "template": {
                                   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-                                  "languageVersion": "2.0",
+                                  "languageVersion": "2.1-experimental",
                                   "contentVersion": "1.0.0.0",
                                   "metadata": {
+                                    "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+                                    "_EXPERIMENTAL_FEATURES_ENABLED": [
+                                      "Enable wait and retry feature"
+                                    ],
                                     "_generator": {
                                       "name": "bicep",
                                       "version": "0.39.26.7824",
-                                      "templateHash": "11666262061409473778"
+                                      "templateHash": "16351668309100012816"
                                     },
                                     "name": "Site App Settings",
                                     "description": "This module deploys a Site App Setting."
@@ -40992,15 +41115,15 @@
                         }
                       }
                     }
-                  ],
+                  },
                   "outputs": {
                     "name": {
                       "type": "string",
-                      "value": "[reference(resourceId('Microsoft.Resources/deployments', format('{0}-functions', parameters('name'))), '2025-04-01').outputs.name.value]"
+                      "value": "[reference('functions').outputs.name.value]"
                     },
                     "uri": {
                       "type": "string",
-                      "value": "[reference(resourceId('Microsoft.Resources/deployments', format('{0}-functions', parameters('name'))), '2025-04-01').outputs.defaultHostname.value]"
+                      "value": "[reference('functions').outputs.defaultHostname.value]"
                     },
                     "azureWebJobsStorage": {
                       "type": "string",
@@ -41087,13 +41210,17 @@
         },
         "template": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "languageVersion": "2.0",
+          "languageVersion": "2.1-experimental",
           "contentVersion": "1.0.0.0",
           "metadata": {
+            "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+            "_EXPERIMENTAL_FEATURES_ENABLED": [
+              "Enable wait and retry feature"
+            ],
             "_generator": {
               "name": "bicep",
               "version": "0.39.26.7824",
-              "templateHash": "13305618921652639897"
+              "templateHash": "14085467934695121588"
             },
             "name": "monitoring-solution",
             "description": "AVM WAF-compliant monitoring solution that integrates Application Insights with Log Analytics for centralized telemetry, diagnostics, and observability."
@@ -46715,13 +46842,17 @@
         },
         "template": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "languageVersion": "2.0",
+          "languageVersion": "2.1-experimental",
           "contentVersion": "1.0.0.0",
           "metadata": {
+            "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+            "_EXPERIMENTAL_FEATURES_ENABLED": [
+              "Enable wait and retry feature"
+            ],
             "_generator": {
               "name": "bicep",
               "version": "0.39.26.7824",
-              "templateHash": "8044963307270176525"
+              "templateHash": "11316590842899854573"
             }
           },
           "parameters": {
@@ -46934,13 +47065,17 @@
                 },
                 "template": {
                   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-                  "languageVersion": "2.0",
+                  "languageVersion": "2.1-experimental",
                   "contentVersion": "1.0.0.0",
                   "metadata": {
+                    "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+                    "_EXPERIMENTAL_FEATURES_ENABLED": [
+                      "Enable wait and retry feature"
+                    ],
                     "_generator": {
                       "name": "bicep",
                       "version": "0.39.26.7824",
-                      "templateHash": "14376261070114657221"
+                      "templateHash": "15394282551041475968"
                     },
                     "name": "Cognitive Services",
                     "description": "This module deploys a Cognitive Service."
@@ -49319,13 +49454,17 @@
         },
         "template": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "languageVersion": "2.0",
+          "languageVersion": "2.1-experimental",
           "contentVersion": "1.0.0.0",
           "metadata": {
+            "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+            "_EXPERIMENTAL_FEATURES_ENABLED": [
+              "Enable wait and retry feature"
+            ],
             "_generator": {
               "name": "bicep",
               "version": "0.39.26.7824",
-              "templateHash": "8044963307270176525"
+              "templateHash": "11316590842899854573"
             }
           },
           "parameters": {
@@ -49538,13 +49677,17 @@
                 },
                 "template": {
                   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-                  "languageVersion": "2.0",
+                  "languageVersion": "2.1-experimental",
                   "contentVersion": "1.0.0.0",
                   "metadata": {
+                    "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+                    "_EXPERIMENTAL_FEATURES_ENABLED": [
+                      "Enable wait and retry feature"
+                    ],
                     "_generator": {
                       "name": "bicep",
                       "version": "0.39.26.7824",
-                      "templateHash": "14376261070114657221"
+                      "templateHash": "15394282551041475968"
                     },
                     "name": "Cognitive Services",
                     "description": "This module deploys a Cognitive Service."
@@ -51979,13 +52122,17 @@
         },
         "template": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-          "languageVersion": "2.0",
+          "languageVersion": "2.1-experimental",
           "contentVersion": "1.0.0.0",
           "metadata": {
+            "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+            "_EXPERIMENTAL_FEATURES_ENABLED": [
+              "Enable wait and retry feature"
+            ],
             "_generator": {
               "name": "bicep",
               "version": "0.39.26.7824",
-              "templateHash": "883693756681856266"
+              "templateHash": "8610458660586949324"
             },
             "name": "Storage Accounts",
             "description": "This module deploys a Storage Account."
@@ -54021,13 +54168,17 @@
                 },
                 "template": {
                   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-                  "languageVersion": "2.0",
+                  "languageVersion": "2.1-experimental",
                   "contentVersion": "1.0.0.0",
                   "metadata": {
+                    "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+                    "_EXPERIMENTAL_FEATURES_ENABLED": [
+                      "Enable wait and retry feature"
+                    ],
                     "_generator": {
                       "name": "bicep",
                       "version": "0.39.26.7824",
-                      "templateHash": "7481967067901562837"
+                      "templateHash": "10134122062811309277"
                     },
                     "name": "Storage Account blob Services",
                     "description": "This module deploys a Storage Account Blob Service."
@@ -54486,13 +54637,17 @@
                         },
                         "template": {
                           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-                          "languageVersion": "2.0",
+                          "languageVersion": "2.1-experimental",
                           "contentVersion": "1.0.0.0",
                           "metadata": {
+                            "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+                            "_EXPERIMENTAL_FEATURES_ENABLED": [
+                              "Enable wait and retry feature"
+                            ],
                             "_generator": {
                               "name": "bicep",
                               "version": "0.39.26.7824",
-                              "templateHash": "12374539759649682270"
+                              "templateHash": "314622094737279790"
                             },
                             "name": "Storage Account Blob Containers",
                             "description": "This module deploys a Storage Account Blob Container."
@@ -54716,13 +54871,17 @@
                 },
                 "template": {
                   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-                  "languageVersion": "2.0",
+                  "languageVersion": "2.1-experimental",
                   "contentVersion": "1.0.0.0",
                   "metadata": {
+                    "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+                    "_EXPERIMENTAL_FEATURES_ENABLED": [
+                      "Enable wait and retry feature"
+                    ],
                     "_generator": {
                       "name": "bicep",
                       "version": "0.39.26.7824",
-                      "templateHash": "16734288001921596993"
+                      "templateHash": "2996563729947600975"
                     },
                     "name": "Storage Account Queue Services",
                     "description": "This module deploys a Storage Account Queue Service."
@@ -55032,12 +55191,17 @@
                         },
                         "template": {
                           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+                          "languageVersion": "2.1-experimental",
                           "contentVersion": "1.0.0.0",
                           "metadata": {
+                            "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+                            "_EXPERIMENTAL_FEATURES_ENABLED": [
+                              "Enable wait and retry feature"
+                            ],
                             "_generator": {
                               "name": "bicep",
                               "version": "0.39.26.7824",
-                              "templateHash": "13997648009268095904"
+                              "templateHash": "15935171734089734022"
                             },
                             "name": "Storage Account Queues",
                             "description": "This module deploys a Storage Account Queue."
@@ -55067,8 +55231,20 @@
                               "defaultValue": {}
                             }
                           },
-                          "resources": [
-                            {
+                          "resources": {
+                            "storageAccount::queueServices": {
+                              "existing": true,
+                              "type": "Microsoft.Storage/storageAccounts/queueServices",
+                              "apiVersion": "2024-01-01",
+                              "name": "[format('{0}/{1}', parameters('storageAccountName'), 'default')]"
+                            },
+                            "storageAccount": {
+                              "existing": true,
+                              "type": "Microsoft.Storage/storageAccounts",
+                              "apiVersion": "2024-01-01",
+                              "name": "[parameters('storageAccountName')]"
+                            },
+                            "queue": {
                               "type": "Microsoft.Storage/storageAccounts/queueServices/queues",
                               "apiVersion": "2024-01-01",
                               "name": "[format('{0}/{1}/{2}', parameters('storageAccountName'), 'default', parameters('name'))]",
@@ -55076,7 +55252,7 @@
                                 "metadata": "[parameters('metadata')]"
                               }
                             }
-                          ],
+                          },
                           "outputs": {
                             "name": {
                               "type": "string",
@@ -55160,9 +55336,9 @@
         }
       },
       "dependsOn": [
+        "[format('avmPrivateDnsZones[{0}]', variables('dnsZoneIndex').storageFile)]",
         "[format('avmPrivateDnsZones[{0}]', variables('dnsZoneIndex').storageBlob)]",
         "[format('avmPrivateDnsZones[{0}]', variables('dnsZoneIndex').storageQueue)]",
-        "[format('avmPrivateDnsZones[{0}]', variables('dnsZoneIndex').storageFile)]",
         "managedIdentityModule",
         "virtualNetwork"
       ]
@@ -55212,12 +55388,17 @@
         },
         "template": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+          "languageVersion": "2.1-experimental",
           "contentVersion": "1.0.0.0",
           "metadata": {
+            "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+            "_EXPERIMENTAL_FEATURES_ENABLED": [
+              "Enable wait and retry feature"
+            ],
             "_generator": {
               "name": "bicep",
               "version": "0.39.26.7824",
-              "templateHash": "5984624121413164254"
+              "templateHash": "12510702088243583320"
             }
           },
           "parameters": {
@@ -55269,8 +55450,8 @@
             "wookbookContentsAISearchReplaced": "[replace(variables('wookbookContentsOpenAIReplaced'), '{ai-search}', parameters('azureAISearchName'))]",
             "wookbookContentsStorageAccountReplaced": "[replace(variables('wookbookContentsAISearchReplaced'), '{storage-account}', parameters('storageAccountName'))]"
           },
-          "resources": [
-            {
+          "resources": {
+            "cwydsa_workbook": {
               "type": "Microsoft.Resources/deployments",
               "apiVersion": "2025-04-01",
               "name": "[parameters('workbookDisplayName')]",
@@ -55295,12 +55476,17 @@
                 },
                 "template": {
                   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+                  "languageVersion": "2.1-experimental",
                   "contentVersion": "1.0.0.0",
                   "metadata": {
+                    "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+                    "_EXPERIMENTAL_FEATURES_ENABLED": [
+                      "Enable wait and retry feature"
+                    ],
                     "_generator": {
                       "name": "bicep",
                       "version": "0.39.26.7824",
-                      "templateHash": "3478302565653564157"
+                      "templateHash": "9862609559618643247"
                     },
                     "name": "workbook",
                     "description": "AVM WAF-compliant Workbook deployment using Microsoft.Insights resource type. Ensures governance, observability, tagging, and consistency with other monitoring resources."
@@ -55353,8 +55539,8 @@
                       }
                     }
                   },
-                  "resources": [
-                    {
+                  "resources": {
+                    "workbook_resource": {
                       "type": "Microsoft.Insights/workbooks",
                       "apiVersion": "2023-06-01",
                       "name": "[parameters('workbookId')]",
@@ -55369,7 +55555,7 @@
                         "category": "[parameters('workbookType')]"
                       }
                     }
-                  ],
+                  },
                   "outputs": {
                     "workbookResourceId": {
                       "type": "string",
@@ -55382,7 +55568,7 @@
                 }
               }
             }
-          ]
+          }
         }
       },
       "dependsOn": [
@@ -56654,12 +56840,17 @@
         },
         "template": {
           "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+          "languageVersion": "2.1-experimental",
           "contentVersion": "1.0.0.0",
           "metadata": {
+            "_EXPERIMENTAL_WARNING": "This template uses ARM features that are experimental. Experimental features should be enabled for testing purposes only, as there are no guarantees about the quality or stability of these features. Do not enable these settings for any production usage, or your production environment may be subject to breaking.",
+            "_EXPERIMENTAL_FEATURES_ENABLED": [
+              "Enable wait and retry feature"
+            ],
             "_generator": {
               "name": "bicep",
               "version": "0.39.26.7824",
-              "templateHash": "4941871820444850127"
+              "templateHash": "2794280662320186943"
             }
           },
           "parameters": {
@@ -56671,8 +56862,8 @@
               }
             }
           },
-          "resources": [
-            {
+          "resources": {
+            "roleAssignmentsModule": {
               "copy": {
                 "name": "roleAssignmentsModule",
                 "count": "[length(parameters('roleAssignments'))]"
@@ -56925,7 +57116,7 @@
                 "description": "Role assignments applied to the system-assigned identity via AVM module. Objects can include: roleDefinitionId (req), roleName, principalType, resourceId."
               }
             }
-          ]
+          }
         }
       },
       "dependsOn": [

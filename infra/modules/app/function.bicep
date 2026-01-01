@@ -1,5 +1,5 @@
 @description('Required. Name of the function app.')
-param name string
+param name string = 'fntestcwyd36'
 
 @description('Optional. Location for all resources.')
 param location string = resourceGroup().location
@@ -8,10 +8,10 @@ param location string = resourceGroup().location
 param tags object = {}
 
 @description('Required. The resource ID of the app service plan to use for the function app.')
-param serverFarmResourceId string
+param serverFarmResourceId string = '/subscriptions/1d5876cd-7603-407a-96d2-ae5ca9a9c5f3/resourceGroups/rg-cwydpocabps13/providers/Microsoft.Web/serverFarms/asp-cwydpocabps13llxlz'
 
 @description('Optional. The name of the storage account to use for the function app.')
-param storageAccountName string = ''
+param storageAccountName string = 'stcwydpocabps13llxlz'
 
 @description('Optional. The name of the application insights instance to use with the function app.')
 param applicationInsightsName string = ''
@@ -47,7 +47,7 @@ param appSettings object = {}
 
 @description('Optional. The client key to use for the function app.')
 @secure()
-param clientKey string
+param clientKey string = 'default-test-key-${uniqueString(resourceGroup().id)}'
 
 @description('Optional. Determines if HTTPS is required for the function app. When true, HTTP requests are redirected to HTTPS.')
 param httpsOnly bool = true
@@ -109,7 +109,23 @@ module function '../core/host/functions.bicep' = {
   }
 }
 
-resource functionNameDefaultClientKey 'Microsoft.Web/sites/host/functionKeys@2018-11-01' = {
+// Always wait for the function app runtime to be ready (checks every ~30 seconds)
+// This ensures we wait even if the app shows as Running, until the host runtime is responsive
+@waitUntil(
+  func =>
+    func.properties.state == 'Running' && func.properties.availabilityState == 'Normal' && func.properties.hostNamesDisabled == false,
+  '10m'
+)
+resource functionAppWait 'Microsoft.Web/sites@2023-01-01' existing = {
+  name: name
+  dependsOn: [
+    function
+  ]
+}
+
+//@waitUntil(cluster => contains(['Succeeded', 'Failed', 'Canceled'], cluster.properties.provisioningState), '10m')
+@retryOn(['ResourceNotFound', 'ResourceConflict', 'InternalServerError', 'BadRequest', 'ServiceUnavailable'], 5)
+resource functionNameDefaultClientKey 'Microsoft.Web/sites/host/functionKeys@2024-04-01' = {
   name: '${name}/default/clientKey'
   properties: {
     name: 'ClientKey'
@@ -117,22 +133,7 @@ resource functionNameDefaultClientKey 'Microsoft.Web/sites/host/functionKeys@201
   }
   dependsOn: [
     function
-    waitFunctionDeploymentSection
-  ]
-}
-
-resource waitFunctionDeploymentSection 'Microsoft.Resources/deploymentScripts@2020-10-01' = {
-  kind: 'AzurePowerShell'
-  name: 'WaitFunctionDeploymentSection'
-  location: location
-  properties: {
-    azPowerShellVersion: '11.0'
-    scriptContent: 'start-sleep -Seconds 300'
-    cleanupPreference: 'Always'
-    retentionInterval: 'PT1H'
-  }
-  dependsOn: [
-    function
+    functionAppWait // Wait for function app to be Running
   ]
 }
 
