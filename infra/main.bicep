@@ -142,7 +142,7 @@ param azureOpenAIModelName string = 'gpt-4.1'
 param azureOpenAIModelVersion string = '2025-04-14'
 
 @description('Optional. Azure OpenAI Model Capacity - See here for more info  https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/quota.')
-param azureOpenAIModelCapacity int = 150
+param azureOpenAIModelCapacity int = 10
 
 @description('Optional. Whether to enable the use of a vision LLM and Computer Vision for embedding images. If the database type is PostgreSQL, set this to false.')
 param useAdvancedImageProcessing bool = false
@@ -208,7 +208,7 @@ param azureOpenAIEmbeddingModelName string = 'text-embedding-ada-002'
 param azureOpenAIEmbeddingModelVersion string = '2'
 
 @description('Optional. Azure OpenAI Embedding Model Capacity - See here for more info https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/quota .')
-param azureOpenAIEmbeddingModelCapacity int = 100
+param azureOpenAIEmbeddingModelCapacity int = 10
 
 @description('Optional. Name of Computer Vision Resource (if useAdvancedImageProcessing=true).')
 var computerVisionName string = 'cv-${solutionSuffix}'
@@ -393,6 +393,7 @@ resource resourceGroupTags 'Microsoft.Resources/tags@2025-04-01' = {
       ...allTags
       TemplateName: 'CWYD'
       CreatedBy: createdBy
+      SecurityControl: 'Ignore'
     }
   }
 }
