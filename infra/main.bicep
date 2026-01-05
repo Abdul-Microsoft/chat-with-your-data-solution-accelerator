@@ -283,9 +283,6 @@ var speechServiceName string = 'spch-${solutionSuffix}'
 @description('Log Analytics Name.')
 var logAnalyticsName string = 'log-${solutionSuffix}'
 
-@description('Optional. A new GUID string generated for this deployment. This can be used for unique naming if needed.')
-param newGuidString string = newGuid()
-
 @description('Optional. Principal object for user or service principal to assign application roles. Format: {"id":"<object-id>", "name":"<name-or-upn>", "type":"User|Group|ServicePrincipal"}')
 param principal object = {
   id: '' // Principal ID
@@ -346,7 +343,6 @@ param enableTelemetry bool = true
 
 var blobContainerName = 'documents'
 var queueName = 'doc-processing'
-var clientKey = '${uniqueString(guid(subscription().id, deployment().name))}${newGuidString}'
 var eventGridSystemTopicName = 'doc-processing'
 var baseUrl = 'https://raw.githubusercontent.com/Azure-Samples/chat-with-your-data-solution-accelerator/main/'
 
@@ -926,12 +922,6 @@ module keyvault './modules/key-vault/vault/vault.bicep' = {
           ]
         : []
     )
-    secrets: [
-      {
-        name: 'FUNCTION-KEY'
-        value: clientKey
-      }
-    ]
     enableTelemetry: enableTelemetry
   }
 }
@@ -1441,7 +1431,6 @@ module function 'modules/app/function.bicep' = {
     serverFarmResourceId: webServerFarm.outputs.resourceId
     applicationInsightsName: enableMonitoring ? monitoring!.outputs.applicationInsightsName : ''
     storageAccountName: storage.outputs.name
-    clientKey: clientKey
     userAssignedIdentityResourceId: managedIdentityModule.outputs.resourceId
     userAssignedIdentityClientId: managedIdentityModule.outputs.clientId
     // WAF aligned configurations
@@ -2068,3 +2057,10 @@ output OPEN_AI_FUNCTIONS_SYSTEM_PROMPT string = openAIFunctionsSystemPrompt
 
 @description('System prompt used by the Semantic Kernel orchestration.')
 output SEMANTIC_KERNEL_SYSTEM_PROMPT string = semanticKernelSystemPrompt
+
+// Outputs for post-provision scripts
+@description('The name of the Azure Function App.')
+output AZURE_FUNCTION_NAME string = function.outputs.functionName
+
+@description('The name of the Azure Key Vault.')
+output AZURE_KEY_VAULT_NAME string = keyVaultName

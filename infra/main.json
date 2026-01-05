@@ -6,7 +6,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.39.26.7824",
-      "templateHash": "17963400440273294880"
+      "templateHash": "14468050293654349220"
     }
   },
   "parameters": {
@@ -446,13 +446,6 @@
         "description": "Optional. Azure AI Search Conversation Log Index."
       }
     },
-    "newGuidString": {
-      "type": "string",
-      "defaultValue": "[newGuid()]",
-      "metadata": {
-        "description": "Optional. A new GUID string generated for this deployment. This can be used for unique naming if needed."
-      }
-    },
     "principal": {
       "type": "object",
       "defaultValue": {
@@ -610,7 +603,6 @@
     "logAnalyticsName": "[format('log-{0}', variables('solutionSuffix'))]",
     "blobContainerName": "documents",
     "queueName": "doc-processing",
-    "clientKey": "[format('{0}{1}', uniqueString(guid(subscription().id, deployment().name)), parameters('newGuidString'))]",
     "eventGridSystemTopicName": "doc-processing",
     "baseUrl": "https://raw.githubusercontent.com/Azure-Samples/chat-with-your-data-solution-accelerator/main/",
     "registryName": "cwydcontainerreg",
@@ -20804,14 +20796,6 @@
           "roleAssignments": {
             "value": "[concat(if(not(equals(reference('managedIdentityModule').outputs.principalId.value, '')), createArray(createObject('principalId', reference('managedIdentityModule').outputs.principalId.value, 'principalType', 'ServicePrincipal', 'roleDefinitionIdOrName', 'Key Vault Secrets User')), createArray()), if(not(empty(parameters('principal').id)), createArray(createObject('principalId', parameters('principal').id, 'roleDefinitionIdOrName', 'Key Vault Secrets User')), createArray()))]"
           },
-          "secrets": {
-            "value": [
-              {
-                "name": "FUNCTION-KEY",
-                "value": "[variables('clientKey')]"
-              }
-            ]
-          },
           "enableTelemetry": {
             "value": "[parameters('enableTelemetry')]"
           }
@@ -38346,9 +38330,6 @@
           "storageAccountName": {
             "value": "[reference('storage').outputs.name.value]"
           },
-          "clientKey": {
-            "value": "[variables('clientKey')]"
-          },
           "userAssignedIdentityResourceId": {
             "value": "[reference('managedIdentityModule').outputs.resourceId.value]"
           },
@@ -38374,7 +38355,7 @@
             "_generator": {
               "name": "bicep",
               "version": "0.39.26.7824",
-              "templateHash": "10996245640052014127"
+              "templateHash": "14301484202144515876"
             }
           },
           "parameters": {
@@ -38470,12 +38451,6 @@
                 "description": "Optional. Settings for the function app."
               }
             },
-            "clientKey": {
-              "type": "securestring",
-              "metadata": {
-                "description": "Optional. The client key to use for the function app."
-              }
-            },
             "httpsOnly": {
               "type": "bool",
               "defaultValue": true,
@@ -38542,35 +38517,6 @@
             "kind": "[if(variables('useDocker'), 'functionapp,linux,container', 'functionapp,linux')]"
           },
           "resources": {
-            "functionNameDefaultClientKey": {
-              "type": "Microsoft.Web/sites/host/functionKeys",
-              "apiVersion": "2018-11-01",
-              "name": "[format('{0}/default/clientKey', parameters('name'))]",
-              "properties": {
-                "name": "ClientKey",
-                "value": "[parameters('clientKey')]"
-              },
-              "dependsOn": [
-                "function",
-                "waitFunctionDeploymentSection"
-              ]
-            },
-            "waitFunctionDeploymentSection": {
-              "type": "Microsoft.Resources/deploymentScripts",
-              "apiVersion": "2020-10-01",
-              "name": "WaitFunctionDeploymentSection",
-              "kind": "AzurePowerShell",
-              "location": "[parameters('location')]",
-              "properties": {
-                "azPowerShellVersion": "11.0",
-                "scriptContent": "start-sleep -Seconds 300",
-                "cleanupPreference": "Always",
-                "retentionInterval": "PT1H"
-              },
-              "dependsOn": [
-                "function"
-              ]
-            },
             "function": {
               "type": "Microsoft.Resources/deployments",
               "apiVersion": "2025-04-01",
@@ -55161,8 +55107,8 @@
       },
       "dependsOn": [
         "[format('avmPrivateDnsZones[{0}]', variables('dnsZoneIndex').storageBlob)]",
-        "[format('avmPrivateDnsZones[{0}]', variables('dnsZoneIndex').storageQueue)]",
         "[format('avmPrivateDnsZones[{0}]', variables('dnsZoneIndex').storageFile)]",
+        "[format('avmPrivateDnsZones[{0}]', variables('dnsZoneIndex').storageQueue)]",
         "managedIdentityModule",
         "virtualNetwork"
       ]
@@ -57762,6 +57708,20 @@
         "description": "System prompt used by the Semantic Kernel orchestration."
       },
       "value": "[variables('semanticKernelSystemPrompt')]"
+    },
+    "AZURE_FUNCTION_NAME": {
+      "type": "string",
+      "metadata": {
+        "description": "The name of the Azure Function App."
+      },
+      "value": "[reference('function').outputs.functionName.value]"
+    },
+    "AZURE_KEY_VAULT_NAME": {
+      "type": "string",
+      "metadata": {
+        "description": "The name of the Azure Key Vault."
+      },
+      "value": "[variables('keyVaultName')]"
     }
   }
 }

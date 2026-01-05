@@ -12,10 +12,14 @@ hooks:
     # run: ./infra/prompt-flow/create-prompt-flow.sh
     posix:
       shell: sh
-      run: chmod +x ./scripts/parse_env.sh && ./scripts/parse_env.sh
+      run: |
+        chmod +x ./scripts/parse_env.sh && ./scripts/parse_env.sh
+        chmod +x ./scripts/create_function_key.sh && ./scripts/create_function_key.sh
     windows:
       shell: pwsh
-      run: ./scripts/parse_env.ps1
+      run: |
+        ./scripts/parse_env.ps1
+        ./scripts/create_function_key.ps1
 services:
   web:
     project: ./code
