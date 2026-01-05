@@ -123,7 +123,7 @@ resource functionAppWait 'Microsoft.Web/sites@2023-01-01' existing = {
   ]
 }
 
-//@waitUntil(cluster => contains(['Succeeded', 'Failed', 'Canceled'], cluster.properties.provisioningState), '10m')
+@waitUntil(cluster => contains(['Succeeded', 'Failed', 'Canceled'], cluster.properties.provisioningState), '10m')
 @retryOn(['ResourceNotFound', 'ResourceConflict', 'InternalServerError', 'BadRequest', 'ServiceUnavailable'], 5)
 resource functionNameDefaultClientKey 'Microsoft.Web/sites/host/functionKeys@2024-04-01' = {
   name: '${name}/default/clientKey'
